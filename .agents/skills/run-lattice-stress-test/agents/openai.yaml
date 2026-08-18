@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lattice Stress Test"
+  short_description: "Run traceable lattice compression stress tests"
+  default_prompt: "Use $run-lattice-stress-test to analyze a TIFF and registered lattice JSON, run the compression workflow, and write an illustrated report."

@@ -1,0 +1,119 @@
+{
+  "method": "postprocess_fea_results",
+  "input_results_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial5\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_fea_results_with_settling.npz",
+  "summary": {
+    "num_steps": 11,
+    "max_displacement_mm": 0.125,
+    "max_engineering_strain": 0.0024509803921568627,
+    "max_engineering_stress_mpa": 0.9135844533432721,
+    "max_reaction_force_n": 1558.4391680124204,
+    "effective_specimen_modulus_gpa": 0.3904416726559359,
+    "stress_strain_slope_mpa": 390.44167265593586
+  },
+  "deformation_partition": {
+    "final_step_displacement_fraction": {
+      "top_skin": 0.00047857622571669087,
+      "bottom_skin": 0.0004787681552236958,
+      "lattice_interior": 0.9990426556190596
+    },
+    "final_step_region_strains": {
+      "top_skin": 1.0748052392273789e-05,
+      "bottom_skin": 1.0748052392273789e-05,
+      "lattice_interior": 0.0027274955496620194
+    },
+    "dominant_strain_region": "lattice_interior"
+  },
+  "consistency_checks": {
+    "max_displacement_reconstruction_residual_mm": 0.013000000000000025
+  },
+  "response_curve": [
+    {
+      "step": 0,
+      "displacement_mm": 0.0,
+      "engineering_strain": 0.0,
+      "engineering_stress_mpa": 0.0,
+      "reaction_force_n": 0.0
+    },
+    {
+      "step": 1,
+      "displacement_mm": 0.0125,
+      "engineering_strain": 0.00024509803921568627,
+      "engineering_stress_mpa": 0.035686892708721565,
+      "reaction_force_n": 60.876530000485175
+    },
+    {
+      "step": 2,
+      "displacement_mm": 0.025,
+      "engineering_strain": 0.0004901960784313725,
+      "engineering_stress_mpa": 0.09788404857249344,
+      "reaction_force_n": 166.97562514418792
+    },
+    {
+      "step": 3,
+      "displacement_mm": 0.037500000000000006,
+      "engineering_strain": 0.0007352941176470589,
+      "engineering_stress_mpa": 0.19984659916884082,
+      "reaction_force_n": 340.90856800271706
+    },
+    {
+      "step": 4,
+      "displacement_mm": 0.05,
+      "engineering_strain": 0.000980392156862745,
+      "engineering_stress_mpa": 0.30180914976518813,
+      "reaction_force_n": 514.8415108612461
+    },
+    {
+      "step": 5,
+      "displacement_mm": 0.0625,
+      "engineering_strain": 0.0012254901960784314,
+      "engineering_stress_mpa": 0.4037717003615354,
+      "reaction_force_n": 688.7744537197751
+    },
+    {
+      "step": 6,
+      "displacement_mm": 0.07500000000000001,
+      "engineering_strain": 0.0014705882352941178,
+      "engineering_stress_mpa": 0.5057342509578829,
+      "reaction_force_n": 862.7073965783044
+    },
+    {
+      "step": 7,
+      "displacement_mm": 0.08750000000000001,
+      "engineering_strain": 0.0017156862745098041,
+      "engineering_stress_mpa": 0.6076968015542301,
+      "reaction_force_n": 1036.6403394368333
+    },
+    {
+      "step": 8,
+      "displacement_mm": 0.1,
+      "engineering_strain": 0.00196078431372549,
+      "engineering_stress_mpa": 0.7096593521505774,
+      "reaction_force_n": 1210.5732822953623
+    },
+    {
+      "step": 9,
+      "displacement_mm": 0.1125,
+      "engineering_strain": 0.0022058823529411764,
+      "engineering_stress_mpa": 0.8116219027469247,
+      "reaction_force_n": 1384.5062251538914
+    },
+    {
+      "step": 10,
+      "displacement_mm": 0.125,
+      "engineering_strain": 0.0024509803921568627,
+      "engineering_stress_mpa": 0.9135844533432721,
+      "reaction_force_n": 1558.4391680124204
+    }
+  ],
+  "figures": {
+    "force_displacement_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial5\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_with_settling_force_displacement.png",
+    "stress_strain_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial5\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_with_settling_stress_strain.png",
+    "deformation_partition_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial5\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_with_settling_deformation_partition.png"
+  },
+  "notes": [
+    "This summary is for a single simplified continuum specimen model with settling.",
+    "The reported effective modulus comes from the linear stress-strain slope of the solved response.",
+    "The deformation partition shows how much of the imposed displacement is taken up by the skins versus the effective lattice interior.",
+    "Postprocessing was completed locally because the MCP postprocessing step crashed."
+  ]
+}

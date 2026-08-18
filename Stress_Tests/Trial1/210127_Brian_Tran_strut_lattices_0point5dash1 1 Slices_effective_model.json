@@ -1,0 +1,91 @@
+{
+  "method": "build_effective_specimen_model",
+  "specimen_name": "210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices",
+  "axes_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial1\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_axes.json",
+  "center_index_coordinates": [
+    416.2526450089688,
+    406.75374565813325,
+    381.17083585251714
+  ],
+  "rotation_matrix": [
+    [
+      0.9999867286165122,
+      0.005087147630573206,
+      -0.0008145672659458678
+    ],
+    [
+      -0.005084872943298719,
+      0.9999832336528703,
+      0.0027706461880875133
+    ],
+    [
+      0.0008286482948192858,
+      -0.0027664674467284666,
+      0.9999958299912404
+    ]
+  ],
+  "axis_vectors": {
+    "r1": [
+      0.9999867286165122,
+      -0.005084872943298719,
+      0.0008286482948192858
+    ],
+    "r2": [
+      0.005087147630573206,
+      0.9999832336528703,
+      -0.0027664674467284666
+    ],
+    "r3": [
+      -0.0008145672659458678,
+      0.0027706461880875133,
+      0.9999958299912404
+    ]
+  },
+  "loading_axis": {
+    "name": "r1",
+    "vector": [
+      0.9999867286165122,
+      -0.005084872943298719,
+      0.0008286482948192858
+    ]
+  },
+  "geometry_mm": {
+    "lattice_region_size": {
+      "x": 41.365,
+      "y": 41.239,
+      "z": 41.024
+    },
+    "skin_thickness": {
+      "top": 4.987,
+      "bottom": 4.989
+    },
+    "lattice_height_along_loading_axis": 41.365,
+    "overall_height_along_loading_axis": 51.341
+  },
+  "regions": {
+    "lattice_interior": {
+      "type": "effective_continuum_block",
+      "top_position_along_loading_axis_mm": 20.6825,
+      "bottom_position_along_loading_axis_mm": -20.6825
+    },
+    "top_skin": {
+      "type": "solid_skin",
+      "inner_position_along_loading_axis_mm": 20.6825,
+      "outer_position_along_loading_axis_mm": 25.6695
+    },
+    "bottom_skin": {
+      "type": "solid_skin",
+      "inner_position_along_loading_axis_mm": -20.6825,
+      "outer_position_along_loading_axis_mm": -25.6715
+    }
+  },
+  "boundary_faces": {
+    "top_face_position_along_loading_axis_mm": 25.6695,
+    "bottom_face_position_along_loading_axis_mm": -25.6715
+  },
+  "notes": [
+    "This is a simplified specimen-scale continuum description, not a voxel-resolved geometry.",
+    "The lattice interior is represented as an effective continuum block.",
+    "The top and bottom skins are represented as solid regions."
+  ]
+}

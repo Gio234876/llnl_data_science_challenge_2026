@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3cf3b3010a08ed5e09df842709bf46950c87994acc16c4a26b164077e2dac8f
-size 1720
+The tif stack names encode CT scan datasets for additively manufactured octet-truss lattice specimens. The trailing part identifies the nominal missing-strut percentage and specimen replicate.
+
+The folders ending in _01, _02, and _03 correspond to the three 0% missing-strut specimens. The folders containing 0point5dash1, 0point5dash2, and 0point5dash3 correspond to the three 0.5% missing-strut specimens. The folders ending in 1_1, 1_2, and 1_3 correspond to the three 1% missing-strut specimens. 
+
+For each missing-strut percentage, the three numbered tif stacks are interpreted as scans of three separate physical specimens printed from the same nominal CAD/STL design, placed at different locations on the same build plate. The three specimens were built for each design and does not have any intentional variation in printing parameters among the three replicates.
+
+The octet_truss_9x9x9.json file contains the nominal node and strut definition of the lattice with all struts present (0% removed). 
+
+Note that the stl files, json file, and tif files live in different coordinate systems and therefore need to be aligned/registered if you want to analyze them in conjunction (e.g. as-design vs. as-built analysis). 
+
+0% missing (0.stl)
+210125_Brian_Tran_strut_lattice_01 1 Slices
+210125_Brian_Tran_strut_lattice_02 1 Slices
+210125_Brian_Tran_strut_lattice_03 1 Slices
+
+0.5% missing (0.5.stl)
+210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices
+210127_Brian_Tran_strut_lattices_0point5dash2 1 Slices
+210127_Brian_Tran_strut_lattices_0point5dash3 1 Slices
+
+1% missing (1.stl)
+210127_Brian_Tran_strut_lattices_1_1 1 Slices
+210127_Brian_Tran_strut_lattices_1_2 1 Slices
+210127_Brian_Tran_strut_lattices_1_3 1 Slices

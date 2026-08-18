@@ -1,0 +1,39 @@
+{
+  "trial_name": "Trial4",
+  "pipeline": "simplified_continuum_with_settling",
+  "specimen_name": "210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices",
+  "inputs": {
+    "tif": "data/missing_struts/tif_stacks/210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices.tif",
+    "registered_json": "data/missing_struts/registered_jsons/210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices.json"
+  },
+  "material_parameters": {
+    "bulk_youngs_modulus_gpa": 85.0,
+    "bulk_poissons_ratio": 0.310,
+    "bulk_density_kg_per_m3": 4650.0
+  },
+  "defect_parameters": {
+    "intentional_missing_strut_percent": 0.493,
+    "unintentional_missing_strut_percent": 0.4504,
+    "broken_or_disconnected_strut_percent": 0.724
+  },
+  "geometry_parameters_mm": {
+    "lattice_size_x": 41.365,
+    "lattice_size_y": 41.239,
+    "lattice_size_z": 41.024,
+    "top_skin_thickness": 4.987,
+    "bottom_skin_thickness": 4.989
+  },
+  "loading_parameters": {
+    "loading_axis_name": "r3",
+    "max_displacement_mm": 0.125,
+    "num_displacement_steps": 10
+  },
+  "settling_parameters": {
+    "settling_displacement_mm": 0.02,
+    "settling_stiffness_scale": 0.25
+  },
+  "notes": [
+    "Chosen as a clean, physically motivated simple-model parameter set.",
+    "Uses the simplified continuum workflow with an initial settling regime."
+  ]
+}

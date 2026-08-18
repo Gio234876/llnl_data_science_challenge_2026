@@ -1,0 +1,21 @@
+{
+  "method": "run_continuum_fea_with_settling",
+  "input_fea_package": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial3\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_fea_inputs.json",
+  "specimen_name": "210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices",
+  "settling_model": {
+    "settling_displacement_mm": 0.02,
+    "settling_stiffness_scale": 0.3,
+    "main_stiffness_n_per_mm": 13914.635428682326,
+    "settling_stiffness_n_per_mm": 4174.390628604698
+  },
+  "results_summary": {
+    "equivalent_specimen_modulus_gpa_main_regime": 0.41600720643309713,
+    "max_engineering_stress_mpa": 0.9054274492955643,
+    "max_reaction_force_n": 1544.5245325837382,
+    "max_displacement_residual_mm": 0.014000000000000012
+  },
+  "outputs": {
+    "npz_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial3\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_fea_results_with_settling.npz",
+    "json_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\Trial3\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_fea_results_with_settling.json"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "method": "postprocess_fea_results",
+  "input_results_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\data\\missing_struts\\tif_stacks\\stress_test\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_fea_results_with_settling.npz",
+  "summary": {
+    "num_steps": 26,
+    "max_displacement_mm": 0.125,
+    "max_engineering_strain": 0.0024509803921568627,
+    "max_engineering_stress_mpa": 0.9054274492955643,
+    "max_reaction_force_n": 1544.5245325837382,
+    "effective_specimen_modulus_gpa": 0.39310903199353187,
+    "stress_strain_slope_mpa": 393.10903199353186
+  },
+  "deformation_partition": {
+    "final_step_displacement_fraction": {
+      "top_skin": 0.0004785762257166909,
+      "bottom_skin": 0.0004787681552236958,
+      "lattice_interior": 0.9990426556190596
+    },
+    "final_step_region_strains": {
+      "top_skin": 1.0652087638771344e-05,
+      "bottom_skin": 1.0652087638771344e-05,
+      "lattice_interior": 0.002703142910825751
+    },
+    "dominant_strain_region": "lattice_interior"
+  },
+  "consistency_checks": {
+    "max_displacement_reconstruction_residual_mm": 0.014000000000000005
+  },
+  "response_curve": [
+    {
+      "step": 0,
+      "displacement_mm": 0.0,
+      "engineering_strain": 0.0,
+      "engineering_stress_mpa": 0.0,
+      "reaction_force_n": 0.0
+    },
+    {
+      "step": 1,
+      "displacement_mm": 0.005,
+      "engineering_strain": 9.80392156862745e-05,
+      "engineering_stress_mpa": 0.01223550607156168,
+      "reaction_force_n": 20.87195314302349
+    },
+    {
+      "step": 2,
+      "displacement_mm": 0.01,
+      "engineering_strain": 0.000196078431372549,
+      "engineering_stress_mpa": 0.02447101214312336,
+      "reaction_force_n": 41.74390628604698
+    },
+    {
+      "step": 3,
+      "displacement_mm": 0.015,
+      "engineering_strain": 0.0002941176470588235,
+      "engineering_stress_mpa": 0.036706518214685034,
+      "reaction_force_n": 62.61585942907046
+    },
+    {
+      "step": 4,
+      "displacement_mm": 0.02,
+      "engineering_strain": 0.000392156862745098,
+      "engineering_stress_mpa": 0.04894202428624672,
+      "reaction_force_n": 83.48781257209396
+    },
+    {
+      "step": 5,
+      "displacement_mm": 0.025,
+      "engineering_strain": 0.0004901960784313725,
+      "engineering_stress_mpa": 0.08972704452478567,
+      "reaction_force_n": 153.0609897155056
+    },
+    {
+      "step": 6,
+      "displacement_mm": 0.03,
+      "engineering_strain": 0.000588235294117647,
+      "engineering_stress_mpa": 0.13051206476332458,
+      "reaction_force_n": 222.6341668589172
+    },
+    {
+      "step": 7,
+      "displacement_mm": 0.035,
+      "engineering_strain": 0.0006862745098039216,
+      "engineering_stress_mpa": 0.17129708500186355,
+      "reaction_force_n": 292.2073440023289
+    },
+    {
+      "step": 8,
+      "displacement_mm": 0.04,
+      "engineering_strain": 0.000784313725490196,
+      "engineering_stress_mpa": 0.21208210524040244,
+      "reaction_force_n": 361.78052114574047
+    },
+    {
+      "step": 9,
+      "displacement_mm": 0.045,
+      "engineering_strain": 0.0008823529411764705,
+      "engineering_stress_mpa": 0.25286712547894136,
+      "reaction_force_n": 431.3536982891521
+    },
+    {
+      "step": 10,
+      "displacement_mm": 0.05,
+      "engineering_strain": 0.000980392156862745,
+      "engineering_stress_mpa": 0.29365214571748033,
+      "reaction_force_n": 500.92687543256375
+    },
+    {
+      "step": 11,
+      "displacement_mm": 0.055,
+      "engineering_strain": 0.0010784313725490195,
+      "engineering_stress_mpa": 0.33443716595601924,
+      "reaction_force_n": 570.5000525759754
+    },
+    {
+      "step": 12,
+      "displacement_mm": 0.06,
+      "engineering_strain": 0.001176470588235294,
+      "engineering_stress_mpa": 0.37522218619455816,
+      "reaction_force_n": 640.073229719387
+    },
+    {
+      "step": 13,
+      "displacement_mm": 0.065,
+      "engineering_strain": 0.0012745098039215687,
+      "engineering_stress_mpa": 0.41600720643309713,
+      "reaction_force_n": 709.6464068627986
+    },
+    {
+      "step": 14,
+      "displacement_mm": 0.07,
+      "engineering_strain": 0.0013725490196078432,
+      "engineering_stress_mpa": 0.4567922266716361,
+      "reaction_force_n": 779.2195840062103
+    },
+    {
+      "step": 15,
+      "displacement_mm": 0.075,
+      "engineering_strain": 0.0014705882352941176,
+      "engineering_stress_mpa": 0.49757724691017496,
+      "reaction_force_n": 848.7927611496218
+    },
+    {
+      "step": 16,
+      "displacement_mm": 0.08,
+      "engineering_strain": 0.001568627450980392,
+      "engineering_stress_mpa": 0.5383622671487139,
+      "reaction_force_n": 918.3659382930335
+    },
+    {
+      "step": 17,
+      "displacement_mm": 0.085,
+      "engineering_strain": 0.0016666666666666668,
+      "engineering_stress_mpa": 0.5791472873872529,
+      "reaction_force_n": 987.9391154364451
+    },
+    {
+      "step": 18,
+      "displacement_mm": 0.09,
+      "engineering_strain": 0.001764705882352941,
+      "engineering_stress_mpa": 0.6199323076257918,
+      "reaction_force_n": 1057.5122925798566
+    },
+    {
+      "step": 19,
+      "displacement_mm": 0.095,
+      "engineering_strain": 0.0018627450980392157,
+      "engineering_stress_mpa": 0.6607173278643308,
+      "reaction_force_n": 1127.0854697232685
+    },
+    {
+      "step": 20,
+      "displacement_mm": 0.1,
+      "engineering_strain": 0.00196078431372549,
+      "engineering_stress_mpa": 0.7015023481028697,
+      "reaction_force_n": 1196.65864686668
+    },
+    {
+      "step": 21,
+      "displacement_mm": 0.105,
+      "engineering_strain": 0.0020588235294117644,
+      "engineering_stress_mpa": 0.7422873683414086,
+      "reaction_force_n": 1266.2318240100917
+    },
+    {
+      "step": 22,
+      "displacement_mm": 0.11,
+      "engineering_strain": 0.002156862745098039,
+      "engineering_stress_mpa": 0.7830723885799475,
+      "reaction_force_n": 1335.8050011535033
+    },
+    {
+      "step": 23,
+      "displacement_mm": 0.115,
+      "engineering_strain": 0.0022549019607843138,
+      "engineering_stress_mpa": 0.8238574088184865,
+      "reaction_force_n": 1405.378178296915
+    },
+    {
+      "step": 24,
+      "displacement_mm": 0.12,
+      "engineering_strain": 0.002352941176470588,
+      "engineering_stress_mpa": 0.8646424290570254,
+      "reaction_force_n": 1474.9513554403266
+    },
+    {
+      "step": 25,
+      "displacement_mm": 0.125,
+      "engineering_strain": 0.0024509803921568627,
+      "engineering_stress_mpa": 0.9054274492955643,
+      "reaction_force_n": 1544.5245325837382
+    }
+  ],
+  "figures": {
+    "force_displacement_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\data\\missing_struts\\tif_stacks\\stress_test\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_force_displacement.png",
+    "stress_strain_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\data\\missing_struts\\tif_stacks\\stress_test\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_stress_strain.png",
+    "deformation_partition_png": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\data\\missing_struts\\tif_stacks\\stress_test\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_continuum_figures_deformation_partition.png"
+  },
+  "notes": [
+    "This summary is for a single simplified continuum specimen model.",
+    "The reported effective modulus comes from the linear stress-strain slope of the solved response.",
+    "The deformation partition shows how much of the imposed displacement is taken up by the skins versus the effective lattice interior."
+  ]
+}

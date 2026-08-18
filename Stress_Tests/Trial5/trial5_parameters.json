@@ -1,0 +1,11 @@
+{
+  "trial_name": "Trial5",
+  "based_on": "Trial4",
+  "pipeline": "simplified_continuum_with_settling",
+  "loading_axis_name": "r3",
+  "max_displacement_mm": 0.125,
+  "num_displacement_steps": 10,
+  "settling_displacement_mm": 0.02,
+  "settling_stiffness_scale": 0.35,
+  "note": "Same as Trial4 except a slightly stiffer initial settling regime."
+}

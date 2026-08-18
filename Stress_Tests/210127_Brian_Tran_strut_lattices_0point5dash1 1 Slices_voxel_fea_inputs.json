@@ -1,0 +1,117 @@
+{
+  "method": "voxel_fea_export",
+  "inputs": {
+    "mask_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_mask_37500.npy",
+    "axes_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_axes.json",
+    "boundary_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_boundaries_r1_band1.npz"
+  },
+  "volume": {
+    "shape": [
+      761,
+      815,
+      837
+    ],
+    "solid_voxel_count": 73295400,
+    "voxel_spacing": [
+      0.0581,
+      0.0581,
+      0.0581
+    ]
+  },
+  "specimen": {
+    "center_index_coordinates": [
+      416.2526450089688,
+      406.75374565813325,
+      381.17083585251714
+    ],
+    "center_physical_coordinates": [
+      24.184278675021087,
+      23.63239262273754,
+      22.146025563031245
+    ],
+    "rotation_matrix": [
+      [
+        0.999986728616512,
+        0.005087147630573205,
+        -0.0008145672659458677
+      ],
+      [
+        -0.0050848729432987185,
+        0.9999832336528701,
+        0.002770646188087513
+      ],
+      [
+        0.0008286482948192857,
+        -0.002766467446728466,
+        0.9999958299912403
+      ]
+    ],
+    "axis_vectors": {
+      "r1": [
+        0.9999867286165122,
+        -0.005084872943298719,
+        0.0008286482948192858
+      ],
+      "r2": [
+        0.005087147630573206,
+        0.9999832336528703,
+        -0.0027664674467284666
+      ],
+      "r3": [
+        -0.0008145672659458678,
+        0.0027706461880875133,
+        0.9999958299912404
+      ]
+    },
+    "selected_loading_axis": {
+      "loading_axis_name": "r1",
+      "loading_axis_vector": [
+        0.9999867286165122,
+        -0.005084872943298719,
+        0.0008286482948192858
+      ],
+      "scan_up_vector": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "scan_alignment": 0.9999867286165122,
+      "flipped_to_match_tif_bottom_to_top": false
+    },
+    "estimated_height_along_loading_axis": 44.396492436927204
+  },
+  "boundary_sets": {
+    "top_voxel_count": 105508,
+    "bottom_voxel_count": 108306,
+    "boundary_axis_consistency_check": {
+      "dot_product": 1.0,
+      "abs_dot_product": 1.0,
+      "likely_consistent": true
+    }
+  },
+  "material": {
+    "youngs_modulus": 85.0,
+    "poissons_ratio": 0.31,
+    "model_type": "linear_elastic_placeholder"
+  },
+  "loading": {
+    "control_type": "displacement_control",
+    "displacement_steps": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ]
+  },
+  "outputs": {
+    "npz_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_voxel_fea_inputs.npz",
+    "json_filepath": "C:\\Users\\Emmag\\llnl_data_science_challenge_2026\\Emma_Stress_Tests\\210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices_voxel_fea_inputs.json"
+  }
+}

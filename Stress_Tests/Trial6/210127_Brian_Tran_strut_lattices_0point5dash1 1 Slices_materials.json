@@ -1,0 +1,31 @@
+{
+  "method": "assign_effective_material_properties",
+  "specimen_name": "210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices",
+  "defect_percentages": {
+    "nominal_missing_strut_percent": 0.493,
+    "measured_missing_strut_percent": 0.4504,
+    "measured_disconnected_strut_percent": 0.724,
+    "total_measured_defect_percent": 1.1743999999999999
+  },
+  "bulk_skin_material": {
+    "material_name": "Ti-5553",
+    "youngs_modulus_gpa": 85.0,
+    "poissons_ratio": 0.31,
+    "density_kg_per_m3": 4650.0
+  },
+  "effective_lattice_material": {
+    "model_type": "effective_continuum_placeholder",
+    "youngs_modulus_gpa": 0.3349536,
+    "poissons_ratio": 0.342,
+    "density_kg_per_m3": 240.0
+  },
+  "metadata": {
+    "effective_properties_user_supplied": true,
+    "effective_properties_estimated": false,
+    "notes": [
+      "Bulk Ti-5553 properties are intended for the solid skins.",
+      "Effective lattice properties are intended for the simplified continuum interior region.",
+      "If these values are estimated, they should be treated as first-pass placeholders and refined later."
+    ]
+  }
+}
