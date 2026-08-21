@@ -13,7 +13,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[4]
 DEFAULT_SOURCE = ROOT / "outputs/detect_missing_struts_test_40000"
 DEFAULT_GRAPH = (
     ROOT
@@ -21,9 +21,6 @@ DEFAULT_GRAPH = (
     / "210127_Brian_Tran_strut_lattices_0point5dash1 1 Slices.json"
 )
 DEFAULT_OUTPUT = ROOT / "outputs/recognize_thin_or_thick_struts"
-DEFAULT_WEB_OUTPUT = (
-    Path(__file__).resolve().parents[1] / "public/assets/classified-struts.json"
-)
 
 THRESHOLD_RAW_INTENSITY = 40_000
 UNIT_CELL_MM = 4.56
@@ -204,7 +201,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
     parser.add_argument("--graph", type=Path, default=DEFAULT_GRAPH)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--web-output", type=Path, default=DEFAULT_WEB_OUTPUT)
+    parser.add_argument(
+        "--web-output",
+        type=Path,
+        help="Optional JSON export path for an external visualization.",
+    )
     return parser.parse_args()
 
 
@@ -360,7 +361,6 @@ def main() -> None:
         row["uncertainty_reasons"] = uncertainty_reasons
 
     args.output.mkdir(parents=True, exist_ok=True)
-    args.web_output.parent.mkdir(parents=True, exist_ok=True)
     counts = Counter(row["classification"] for row in results)
     summary = {
         "measurement": (
@@ -417,9 +417,11 @@ def main() -> None:
     (args.output / "classified_struts.json").write_text(
         json.dumps(payload, separators=(",", ":"), allow_nan=False)
     )
-    args.web_output.write_text(
-        json.dumps(payload, separators=(",", ":"), allow_nan=False)
-    )
+    if args.web_output is not None:
+        args.web_output.parent.mkdir(parents=True, exist_ok=True)
+        args.web_output.write_text(
+            json.dumps(payload, separators=(",", ":"), allow_nan=False)
+        )
     print(json.dumps(summary, indent=2))
 
 

@@ -13,18 +13,22 @@ description: Process multi-page CT TIFF stacks or 3D NumPy volumes by segmenting
    - Obtain the segmentation threshold from the user or an established project value. Do not invent it.
    - Invoke `segment_ct_dataset()` on the volume to create a binary mask.
    - Invoke `skeletonize()` on the mask to create the centerline.
-3. Run `scripts/measure_euclidean_radii.py` with the mask and skeleton.
-4. Verify that all arrays are 3D, shapes match, and every sampled skeleton voxel is inside the segmentation.
-5. After measuring each whole-strut median radius, assign its CAD direction to
+3. Run `scripts/measure_euclidean_radii.py` with the mask and skeleton when a
+   per-skeleton-voxel radius distribution is needed.
+4. Run `scripts/classify_struts.py` for the registered CAD-strut workflow: it
+   samples 25 trimmed cross-sections per strut, measures 16 opposing boundary
+   direction pairs per cross-section, and calculates each whole-strut median.
+5. Verify that all arrays are 3D, shapes match, and every sampled skeleton voxel is inside the segmentation.
+6. After measuring each whole-strut median radius, assign its CAD direction to
    the nearest coordinate plane (XY, XZ, or YZ, using the smallest absolute
    direction component as the plane normal). Compute the median measured strut
    radius separately within each plane.
-6. For each plane, compute `correction factor = CAD nominal radius in voxels /
+7. For each plane, compute `correction factor = CAD nominal radius in voxels /
    plane median measured radius`. Multiply every raw strut radius in that plane
    by this factor. Preserve both the raw radius and corrected radius.
-7. Apply the CAD ±20% thin/normal/thick rule to the corrected radius, never to
+8. Apply the CAD ±20% thin/normal/thick rule to the corrected radius, never to
    the raw radius. Correction must occur before classification.
-8. Repeat the measurement and calibration across a justified segmentation-
+9. Repeat the measurement and calibration across a justified segmentation-
    threshold sensitivity band, then return output paths and a concise summary.
 
 Segmentation must precede skeletonization because `skeletonize()` accepts a binary mask, not raw CT intensities.
@@ -83,6 +87,22 @@ python scripts/measure_euclidean_radii.py \
 ```
 
 Use `--spacing 1 1 1` only when voxel units are acceptable. Use `--overlay-slice Z` to select a representative z-slice; otherwise, let the script select the slice with the most skeleton voxels.
+
+## Run the Registered-Strut Classifier
+
+From the repository root, run:
+
+```bash
+python .agents/skills/recognize-thin-or-thick/scripts/classify_struts.py \
+  --source DETECTION_OUTPUT_DIR \
+  --graph REGISTERED_CAD_GRAPH.json \
+  --output OUTPUT_DIR
+```
+
+The source directory must contain `analysis_metadata.json`,
+`segmentation_mask.npy`, `skeleton.npy`, and `strut_scores.csv`. The script
+uses a CAD graph to exclude the junction ends by trimming each strut, measures
+the cross-sections, applies XY/XZ/YZ calibration, and writes classifications.
 
 ## Outputs
 
