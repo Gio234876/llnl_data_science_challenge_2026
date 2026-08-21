@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recognize Thin or Thick"
+  short_description: "Measure true 3D centerline boundary radii"
+  default_prompt: "Use $recognize-thin-or-thick to segment and skeletonize the missing-struts TIFF stack, measure 3D Euclidean centerline radii, and create a histogram."
